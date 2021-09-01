@@ -1,0 +1,26 @@
+.app-header {
+  align-items: flex-end;
+  justify-content: space-between;
+
+  
+  background: rgb(103,152,148);
+  background: linear-gradient(0deg, rgba(103,152,148,1) 10%, rgba(177,247,241,1) 85%, rgba(255,255,255,1) 100%);
+
+  border-radius: 10px;
+
+  padding: 5px 15px;
+
+}
+
+.app-header h1 {
+  /* width: 150px;
+  height: 150px; */
+  font-size: 26px;
+  /* font-family: 'Courier New', Courier, monospace; */
+
+}
+
+.app-header h2 {
+  font-size: 1.2rem;
+  color: grey;
+}
