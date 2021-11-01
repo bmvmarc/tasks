@@ -3,7 +3,7 @@ import PostListItem from '../post-list-item';
 
 import './post-list.css';
 
-const PostList = ({posts, onDelete}) => {
+const PostList = ({posts, onDelete, onLike, onImportant}) => {
 
     const elements = posts
                     .filter((item) => item === Object(item) && Object.keys(item).length > 0)
@@ -14,6 +14,8 @@ const PostList = ({posts, onDelete}) => {
                                 <PostListItem 
                                     {...itemProps}
                                     onDelete={() => onDelete(id)}
+                                    onLike={() => onLike(id)} 
+                                    onImportant={() => onImportant(id)} 
                                 />
                             </li>
                         )
